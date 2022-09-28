@@ -4,7 +4,7 @@ class Usuario {
     libros;
     mascotas;
 
-    constructor(nombre,apellido,){
+    constructor(nombre,apellido){
         this.nombre = nombre;
         this.apellido = apellido;
         this.libros = [];
