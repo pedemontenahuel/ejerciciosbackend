@@ -29,7 +29,7 @@ class Usuario {
         }
         this.libros.push(arrayDeLibros)
    }
-    }
+    
 
     getBookNames(){
         
@@ -37,25 +37,25 @@ class Usuario {
     }
     
 }
+
 let persona1 = new Usuario('Nahuel','Pedemonte');
 
 
-mascotas1.addMascota('Chiqui')
-mascotas1.addMascota('Buda')
-mascotas1.addMascota('Chimuela')
+persona1.addMascota('Chiqui')
+persona1.addMascota('Buda')
+persona1.addMascota('Chimuela')
 
 
 
 console.log(persona1.getFullName());
-mascotas1.countMascotas()
+persona1.countMascotas()
 persona1.addBook('El Principe','Nicolas Maquiavelo');
 persona1.addBook('Antipatrones del Desarrollo Ágil', 'David Tanzer')
 persona1.addBook('Martin Fierro','José Hernández')
 
-console.log(mascotas1.mascotas);
+console.log(persona1.mascotas);
 
 console.log(persona1.libros)
 console.log(persona1.getBookNames());
-
 
 
