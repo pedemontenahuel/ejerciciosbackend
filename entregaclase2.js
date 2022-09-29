@@ -1,8 +1,5 @@
 class Usuario {
-    nombre;
-    apellido;
-    libros;
-    mascotas;
+
 
     constructor(nombre,apellido){
         this.nombre = nombre;
@@ -16,7 +13,7 @@ class Usuario {
     }
 
     addMascota(mascota){
-     return void   console.log(this.mascotas.push(mascota));
+        this.mascotas.push(mascota)
     }
 
 
@@ -30,10 +27,8 @@ class Usuario {
             libro: nombreLibro,
             autor: autorLibro,
         }
-        return void
-
-        console.log(this.libros.push(arrayDeLibros))
-
+        this.libros.push(arrayDeLibros)
+   }
     }
 
     getBookNames(){
@@ -42,7 +37,6 @@ class Usuario {
     }
     
 }
-let mascotas1 = new Usuario('Nahuel');
 let persona1 = new Usuario('Nahuel','Pedemonte');
 
 
